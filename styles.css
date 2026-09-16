@@ -85,10 +85,12 @@ p { margin: 0 0 12px; }
   overflow: hidden; border: 1px solid var(--clr-border);
 }
 .hero__card-photo {
-  height: 220px; display: flex; align-items: center; justify-content: center;
+  height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;
   background: linear-gradient(135deg, var(--clr-accent), var(--clr-accent-dark));
   color: #fff; font-family: var(--font-head); font-size: 52px; font-weight: 800;
 }
+.hero__logo-mark { flex-shrink: 0; }
+.hero__logo-word { font-family: var(--font-head); font-size: 19px; font-weight: 700; letter-spacing: .01em; }
 .hero__card-body { padding: 26px; }
 .hero__card-quote { font-family: var(--font-head); font-weight: 600; font-size: 17px; color: var(--clr-ink); }
 .hero__card-name { font-size: 14px; color: var(--clr-ink-soft); font-weight: 600; }
